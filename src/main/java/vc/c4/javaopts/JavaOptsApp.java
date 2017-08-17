@@ -30,6 +30,15 @@ public class JavaOptsApp {
     logger.info("Max memory: " + format.format(maxMemory / mb) + mega);
     logger.info("Total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / mb) + mega);
     logger.info("=================================================================\n");
+    
+	while (true) {
+		try {
+			Thread.sleep(3000);
+			System.out.println("Hello, World");
+		} catch (InterruptedException e) {
+			break;
+		}
+	}
   }
 
 }
